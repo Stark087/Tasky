@@ -1,0 +1,8 @@
+nohup: ignoring input
+🤖 Starting Friday Bot...
+==================================================
+✅ All dependencies validated successfully!
+✅ Dependencies validated
+✅ Bot token configured
+🚀 Initializing Friday...
+❌ Error starting Friday: 'Updater' object has no attribute '_Updater__polling_cleanup_cb' and no __dict__ for setting new attributes

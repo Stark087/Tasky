@@ -1,0 +1,15 @@
+nohup: ignoring input
+🤖 Starting Friday Bot (Simplified Version)...
+==================================================
+Traceback (most recent call last):
+  File "/workspace/friday_simple.py", line 341, in <module>
+    main()
+    ~~~~^^
+  File "/workspace/friday_simple.py", line 325, in main
+    application = Application.builder().token(BOT_TOKEN).build()
+  File "/home/ubuntu/.local/lib/python3.13/site-packages/telegram/ext/_applicationbuilder.py", line 312, in build
+    updater = Updater(bot=bot, update_queue=update_queue)
+  File "/home/ubuntu/.local/lib/python3.13/site-packages/telegram/ext/_updater.py", line 128, in __init__
+    self.__polling_cleanup_cb: Optional[Callable[[], Coroutine[Any, Any, None]]] = None
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Updater' object has no attribute '_Updater__polling_cleanup_cb' and no __dict__ for setting new attributes

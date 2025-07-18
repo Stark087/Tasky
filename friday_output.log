@@ -1,0 +1,15 @@
+🤖 Starting Friday Bot (Simplified Version)...
+==================================================
+Traceback (most recent call last):
+  File "/workspace/friday_simple.py", line 341, in <module>
+    main()
+    ~~~~^^
+  File "/workspace/friday_simple.py", line 325, in main
+    application = Application.builder().token(BOT_TOKEN).build()
+  File "/home/ubuntu/.local/lib/python3.13/site-packages/telegram/ext/_applicationbuilder.py", line 320, in build
+    job_queue.set_application(application)  # type: ignore[arg-type]
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/lib/python3.13/site-packages/telegram/ext/_jobqueue.py", line 144, in set_application
+    self._application = weakref.ref(application)
+                        ~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: cannot create weak reference to 'Application' object
